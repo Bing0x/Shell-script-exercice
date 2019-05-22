@@ -1,0 +1,10 @@
+#!/bin/sh
+fact=1
+echo "entrer un nombre positive :"
+read $note
+for (( i=0 ; i<$note ; i++ ))
+do
+let "fact=fact*i"
+done
+echo "le factorielle est : $fact"
+~
