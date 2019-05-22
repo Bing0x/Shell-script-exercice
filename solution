@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "entrer votre note : "
+read Note
+if [ "$Note" -gt 20 ];then
+echo "erreur"
+elif [ "$Note" -ge 16 -a "$Note" -le 20 ];then
+echo "tres bien "
+elif [ "$Note" -ge 14 -a "$Note -le 16 ];then
+echo "bien"
+elif [ "$Note" -ge 12 -a "$Note" -le 14 ];then
+echo "assez bien "
+elif [ "$Note" -ge 10 -a "$Note" -le 12 ];then
+echo "moyen"
+elif [ "$Note" -lt 10 ];then
+echo "insuffisant"
+elif [ "$Note" lt 0 ];then
+echo "erreur"
+fi
